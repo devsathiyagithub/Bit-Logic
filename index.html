@@ -1,0 +1,37 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1 id="output">
+    </h1>
+    <button onClick='myfun()'>
+        output
+    </button>
+    <script>
+        function myfun() {
+            var lo = 1
+            var hi = 3
+            var k = 3
+            var arr = [];
+
+            for (var i = lo; i <= hi; i++) {
+                for (var j = lo + 1; j <= hi; j++) {
+                    if (true) {
+                        let y = i ^ j
+                        arr.push(y)
+                    }
+                }
+            }
+            for (let x in arr) {
+                if(arr[x]>=k){
+            var y = document.getElementById('output').innerHTML ='The maximum possible value of a⊕ b ≤'+k+" is "+ arr[x];
+            }
+            }
+        }
+    </script>
+</body>
+
+</html>
